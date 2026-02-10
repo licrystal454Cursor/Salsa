@@ -1,0 +1,42 @@
+---
+title: "Information Architecture Approach"
+description: "Why the navigation is structured the way it is, and how it scales"
+---
+
+# Information Architecture Approach
+
+This documentation now prioritizes the most common journeys first while keeping versioning and language choices obvious and low-friction.
+
+## Decision-Making Process
+
+- **Primary split by language**: Tabs separate English and French to reduce cognitive load and prevent mixed-language navigation.
+- **Within each language, v2 first**: Most users want the latest capabilities, so v2 content is the default path.
+- **Legacy v1 grouped**: v1 remains fully accessible but visually separated to set expectations.
+- **Consistent group labels**: Repeated group names across languages improve scanning and make the structure easier to learn.
+
+## UX Improvements
+
+- **Start Here** highlights the entry path (overview, onboarding, advanced usage).
+- **Guides** hold day-to-day workflows and feature deep dives.
+- **Reference** collects API, changelog, and troubleshooting in one predictable place.
+- **Legacy v1** is complete, but intentionally grouped to reduce accidental navigation.
+
+## Trade-Offs Considered
+
+- **Tabs vs. single tree**: Tabs add one extra click, but they reduce clutter and language confusion for global users.
+- **v2-first vs. version parity**: Prioritizing v2 helps most users, while v1 remains discoverable for maintenance teams.
+
+## Component Choices (v2 Content)
+
+- **Tabs**: Used to compare workflows (setup paths, plan summaries, API styles).
+- **Columns + Cards**: Used for fast scanning of feature categories and key updates.
+- **Callouts (Note/Warning/Tip)**: Used to surface critical guidance without interrupting flow.
+- **CodeGroup**: Used to show equivalent API usage across languages.
+
+## Scalability
+
+This structure scales in three dimensions:
+
+- **New languages**: Add a new tab per locale with the same group layout.
+- **New versions**: Add a new group (e.g., "v3") without disturbing existing structure.
+- **New product areas**: Add a new group under Guides or Reference without changing the entry path.

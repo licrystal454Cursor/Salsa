@@ -1,0 +1,40 @@
+---
+title: "Approche de l'architecture"
+description: "Pourquoi la navigation est structuree ainsi et comment elle evolue"
+---
+
+# Approche de l'architecture
+
+Cette documentation privilegie les parcours principaux tout en gardant les choix de langue et de version visibles et simples.
+
+## Processus de decision
+
+- **Separation par langue** : Les onglets isolent le francais et l'anglais pour eviter la confusion.
+- **v2 en priorite** : La majorite des utilisateurs veulent les fonctionnalites les plus recentes.
+- **v1 regroupe** : v1 reste accessible mais clairement identifie comme version historique.
+- **Libelles coherents** : Les memes groupes dans chaque langue facilitent la navigation.
+
+## Ameliorations UX
+
+- **Demarrage** met en avant l'entree (vue d'ensemble, onboarding, usage avance).
+- **Guides** regroupe les flux quotidiens et les fonctionnalites.
+- **Reference** rassemble API, changelog et depannage.
+- **v1 (Legacy)** reste complet sans polluer le chemin principal.
+
+## Arbitrages
+
+- **Onglets vs. arborescence unique** : Un clic en plus, mais moins de bruit et moins d'erreurs de langue.
+- **Priorite v2** : v2 est favorise, tout en gardant v1 disponible pour la maintenance.
+
+## Choix de composants (contenu v2)
+
+- **Onglets** : Comparer parcours et styles d'API.
+- **Colonnes + cartes** : Scanner rapidement les categories et points cles.
+- **Encarts (Note/Warning/Tip)** : Mettre en avant les informations critiques.
+- **CodeGroup** : Montrer des exemples multi-langages.
+
+## Scalabilite
+
+- **Nouvelles langues** : Un onglet par langue avec la meme structure.
+- **Nouvelles versions** : Ajout d'un groupe sans perturber les parcours existants.
+- **Nouveaux domaines** : Ajout de groupes dans Guides ou Reference.
