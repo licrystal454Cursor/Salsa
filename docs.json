@@ -9,9 +9,13 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "English",
+        "language": "en",
+        "banner": {
+          "content": "English Content",
+          "dismissible": true
+        },
         "groups": [
           {
             "group": "Start Here",
@@ -63,7 +67,11 @@
         ]
       },
       {
-        "tab": "Francais",
+       "language": "fr",
+       "banner": {
+        "content": "Contenu Francais",
+        "dismissible": true
+       },
         "groups": [
           {
             "group": "Demarrage",
